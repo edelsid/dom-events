@@ -1,7 +1,9 @@
 // TODO: write code here
+import image from '../img/goblin.png';
 
-const char = document.createElement('div');
+const char = document.createElement('img');
 char.className = 'char';
+char.src = image;
 
 const field = document.querySelectorAll('.hole');
 
