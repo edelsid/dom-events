@@ -1,5 +1,4 @@
 // TODO: write code here
-import '../css/style.css';
 
 const char = document.createElement('div');
 char.className = 'char';
