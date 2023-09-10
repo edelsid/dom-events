@@ -21,11 +21,11 @@ export default class Game {
     const occupied = this.game.char;
 
     if (e.target === occupied) {
-      this.winCounter += this.winCounter;
+      this.winCounter += 1;
       this.hit.textContent = this.winCounter;
       this.game.changePosition();
     } else {
-      this.lossCounter += this.lossCounter;
+      this.lossCounter += 1;
       this.miss.textContent = this.lossCounter;
     }
     if (this.lossCounter > 5) {
