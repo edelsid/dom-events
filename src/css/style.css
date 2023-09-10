@@ -18,9 +18,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: url('../img/hammer.png'), auto;
 }
 
 .char {
     width: 100px;
     height: 100px;
+}
+
+.score {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 650px;
+    text-align: center;
 }
