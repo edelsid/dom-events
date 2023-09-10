@@ -1,7 +1,7 @@
 import image from '../img/goblin.png';
 
 export default class Board {
-  constructor () {
+  constructor() {
     this.char = document.createElement('img');
     this.char.className = 'char';
     this.char.src = image;
@@ -16,7 +16,7 @@ export default class Board {
   changePosition() {
     let newPosition = Math.floor(Math.random() * this.field.length);
     if (newPosition.toString() === this.char.parentNode.id) {
-    newPosition = Math.floor(Math.random() * this.field.length);
+      newPosition = Math.floor(Math.random() * this.field.length);
     }
     this.char.innerHTML = '';
     this.field[newPosition].appendChild(this.char);
